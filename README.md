@@ -1,4 +1,4 @@
-<Title>Js</Title>
+<h1>Js</h1>
 
 # js
 for learning js
