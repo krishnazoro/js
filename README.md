@@ -3,7 +3,7 @@
 # js
 for learning js
 ## Intro
-This is about JS
+This is about JS in a simple way
 ### Sample code
 ```
 <!html doctype>
