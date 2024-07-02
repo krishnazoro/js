@@ -11,6 +11,15 @@ This is about JS
   </head>
 </html>
 ```
+
+<!html doctype>
+<html>
+  <head>
+    <title> this is a game</title>
+  </head>
+</html>
+
+
 #### Ordered list 
 1. Glass
 2. Water
