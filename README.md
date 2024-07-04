@@ -136,6 +136,12 @@ eg:let lastName = null;
    console.log(person);
 
 ```
+## Array
+1. Array has multiple variable,numbers,strings and it covered by square bracket seperated by comma.
+Eg: `let selectcolor = ['red','blue,'green'];`
+2. In js array can mixed with string and numbers.
+Eg: `let selectcolor = ['red','blue,'green',1];`
+
 # Dynamic Type
 1. Js is a dyanamic language.
 - Static language
@@ -143,11 +149,7 @@ eg:let lastName = null;
 - Dynamic language
 it is changeable in future.
 
-
-
-
-
- ## Conditional
+ ### Conditional
  - `<` bigger mouth side is bigger
  - `>` smaller mouth side is smaller
 
