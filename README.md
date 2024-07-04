@@ -73,7 +73,6 @@
 
 ---
 
-
 # Variable
 1. It is store something,it store real or imaginary number.
 2. It is stored in some location.
@@ -160,8 +159,23 @@ name();
 it is changeable in future.
 
  ### Conditional
- - `<` bigger mouth side is bigger
- - `>` smaller mouth side is smaller
+ - `<` bigger mouth side is bigger.
+ - `>` smaller mouth side is smaller.
+---
+# Javascript operator 
+1. js has various operartor.
+2. operator is used to maths operation.
+- Arithmetic operator
+- Assingment operator
+- Comparsion operator 
+- Equality operator
+- Ternary operator
+- Logical operator
+- Logical operator with non boolean operator
+- Bitwise operator
+
+## Arithmetic operator
+1. In arithmetic operator we can assign and operate values with  the help of +, -, *, /, **, %,++,--.
 
 
 
