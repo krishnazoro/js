@@ -142,6 +142,16 @@ Eg: `let selectcolor = ['red','blue,'green'];`
 2. In js array can mixed with string and numbers.
 Eg: `let selectcolor = ['red','blue,'green',1];`
 
+## Function
+1. Function is used for call a variable or number.
+ syntax
+ ```
+function name(){
+    body
+}
+name();
+```
+
 # Dynamic Type
 1. Js is a dyanamic language.
 - Static language
