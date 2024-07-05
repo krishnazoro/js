@@ -177,8 +177,23 @@ it is changeable in future.
 ## Arithmetic operator
 1. In arithmetic operator we can assign and operate values with  the help of +, -, *, /, **, %,++,--.
 
+## Assignment operator
+1. The assignment operator in programming assigns a value to a variable,linking the variable such as '='.
+2. The assignment operator symbols are =, -=, +=, /=, *=, %=, ^=, |=.
+```
+let a=10;
+a+=5;
+console.log(a);
 
-
+```
+## Comparision operator
+1. It is also known as relative operator it compare the two operand by >, <, >=, <=, ===, !== this operator.
+eg:
+```
+let a=10;
+let b=5;
+console.log(a >= 5);
+```
 
 
 
