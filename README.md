@@ -194,7 +194,15 @@ let a=10;
 let b=5;
 console.log(a >= 5);
 ```
-
+## Equality operator
+1. It is loose equality operator.
+2. The symbol of equality operator is ==.
+for example
+```
+let a = 1;
+let b = '1';
+console.log(1 == '1');
+ it say's True
 
 
 
