@@ -72,6 +72,7 @@
 3. It is only for backend.
 
 ---
+# Basics
 
 # Variable
 1. It is store something,it store real or imaginary number.
@@ -162,6 +163,9 @@ it is changeable in future.
  - `<` bigger mouth side is bigger.
  - `>` smaller mouth side is smaller.
 ---
+
+# Operator
+
 # Javascript operator 
 1. js has various operartor.
 2. operator is used to maths operation.
@@ -203,6 +207,128 @@ let a = 1;
 let b = '1';
 console.log(1 == '1');
  it say's True
+ ```
 
+ ## Ternary operator
+ 1. It is also known as conditional operator.
+ 2. if the conditional is true the output is true else false.
+ for example
+ ```
+ let score = 110;
+ let type = score > 100 ? 'pass' : 'fail';
+console.log(type);
+output:
+pass
+```
+## Logical operator
+1. We use this operator based on multiple conditions.
+2. There are 3 types of logical operator 
+- && - And operator
+- || - Or operator
+- 
+i. && operator
+1. If the both are true then the output is true
+for example
+```
+console.log(true && true);
+output 
+true
+```
+ii. || operator
+1. If the one operand is true the output is true.
+for eg
+```
+console.log(true || false);
+output 
+true
+```
+iii. ! not operator
+1. It changes the actual output oppositely.
+for example
+```
+console.log!(true);
+output 
+false
+```
+# Logical operator with non - boolean
+1. In boolean True or false is not necessary.
+for example
+```
+- true || true
+true
+- false || 'mosh'
+'mosh'
+- false || 1
+1
+```
+2. A variable or number that contain anything is called 
+Falsy 
+for example
+``` 
+ false || 1
+1
+```
+3. Falsy is not a boolean 
+4. Falsy categorize
+- undefined
+- null
+- 0
+- false
+- ''(empty string)
+- Nan(not a number{not a number is special in js when we dealing with mathematically})
+5. Anything that is not falsy that is truthy.
+for example
+```
+ true || 1
+1
+```
+6. Short circuiting method
+for example
+```
+ false || 2 || 1
+1
+```
+
+# Bitwise operator
+1. Bitwise operator to 32 bit
+2. The symbol is &, |, ^, ~. 
+
+# Control flow
+1. In this operator and expression along with condtional statement
+2. conditional operator are two types.
+- If else
+- Switch case
+
+i. If else
+1.  We assign the multiple statement in the condition.
+2. syntax:
+if(condition){
+    statement
+}
+else if() {
+    statement
+} 
+else if(){
+    statement
+}
+else
+statement
+
+ii.switch case
+1. We assign the multiple case in the condition.
+2. Syntax
+```
+let (name);
+switch (true or variable name)
+// true for using any condition
+case(variable or condition):{
+    statement;
+    break;
+    //repeat the condition no. of usage 
+default:
+statement;
+}
+```
+3. Don't change the order of execuetion.
 
 
