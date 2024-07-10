@@ -343,7 +343,7 @@ statement;
  - For... of
 3. They all do the same action but it has different way of method.
 
-- For loop
+## For loop
 syntax:
 ```
 for(let i = 0; i < 5; i++ );
@@ -367,3 +367,60 @@ console.log('Hello world');
  - Third step : it goes to !==0 ,0 !==0 false.it comes to end 
  and directly goes to at for loop to increament expression(i++)
  and the 0 is increamented as 1 and repeat the procedure again.
+
+## While loop
+1. It is also same as a for loop but variable ,condition,increament expression and console.log should be seperate at this loop.
+2. For example
+```
+let i = 0;
+while(i < 10){
+    if(i % 2 !==0)
+        console.log(i);
+    i++;
+}
+```
+
+## Do...while
+1. Every loop execute is loop by entry check if it is true.
+2. But in do while loop has exit check .
+3. It print the output atleast one time even if it is false. 
+
+## Infinite loop
+1. It print the output infinite times.
+2. So it able to crash the browser.
+3. For example
+``` 
+let i = 0;
+while (i < 5){
+    console.log(i);
+    
+}
+```
+4. If you not put the increament expression the infinte loop will execute.
+
+## For...in
+1. For in loop is used for looping object properities.
+2. For example
+### Object 
+```
+ let person = {
+     name: 'krishna',
+     age:21
+ }
+ for(let key in person)
+ console.log(key,person[key]);
+ ```
+ ### Array
+ ```
+ let colors = ['red','green','yellow'];
+for(let index in colors)
+    console.log(index,colors[index]);
+```
+## For...of
+1. For of loop is used for iterate the item in array.
+2. For example
+```
+let colors = ['red','green','yellow'];
+for(let colors of colors)
+    console.log(colors);
+``` 
