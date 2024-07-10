@@ -293,6 +293,8 @@ for example
 1. Bitwise operator to 32 bit
 2. The symbol is &, |, ^, ~. 
 
+---
+
 # Control flow
 1. In this operator and expression along with condtional statement
 2. conditional operator are two types.
@@ -331,4 +333,37 @@ statement;
 ```
 3. Don't change the order of execuetion.
 
+# Loop
+1. The loop is used for repeat a action number of times.
+2. There are various kinds of loop.
+ - For
+ - While
+ - Do...while
+ - For... in
+ - For... of
+3. They all do the same action but it has different way of method.
 
+- For loop
+syntax:
+```
+for(let i = 0; i < 5; i++ );
+console.log('Hello world');
+
+```
+1. let i = 0 it is a initial expression and it can be declare before a loop condition.
+2. i < 5 it is a condition.
+3. i++ it is a increamental expression.
+4. For loop for increamenrt example
+```
+ for(let i = 0; i < 10; i++ ){
+ if(i % 2 !==0)
+     console.log(i);
+
+ }
+ ```
+ ### Procedure:
+ - First step :At for loop i= 0 and it compare 0 < 10 if it is true it run the program or exit the program.
+ - Second step :if loop 0 %(modulo) 2 it check the reminder if the reminder is 0 .
+ - Third step : it goes to !==0 ,0 !==0 false.it comes to end 
+ and directly goes to at for loop to increament expression(i++)
+ and the 0 is increamented as 1 and repeat the procedure again.
