@@ -417,10 +417,15 @@ for(let index in colors)
     console.log(index,colors[index]);
 ```
 ## For...of
-1. For of loop is used for iterate the item in array.
-2. For example
+1. For of loop is used for display the item in array.
+2. For in for object and array.
+3. For of for array. 
+4. For example
 ```
 let colors = ['red','green','yellow'];
 for(let colors of colors)
     console.log(colors);
 ``` 
+## Break and continue
+1. Break is for break the loop.
+2. continue for to iterate the loop. 
