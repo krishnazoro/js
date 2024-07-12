@@ -8,9 +8,9 @@ function checkspeed(speed) {
     const limitspeed = 70;
     const kmperpoint = 5;
     
-    if(speed <= limitspeed) 
+    if(speed <= limitspeed) {
         console.log('ok');
-    else {
+    else 
         const points = ((speed - limitspeed) / (kmperpoint));
         if(points >= 12)
             console.log('license suspended');

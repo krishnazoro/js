@@ -416,9 +416,18 @@ while (i < 5){
 for(let index in colors)
     console.log(index,colors[index]);
 ```
+3. Another example
+```
+let numbers = [1,2,3,null,false, true];
+console.log(countTruthy(numbers));
+for (let value in numbers){
+    console.log(numbers);
+}
+```
+
 ## For...of
 1. For of loop is used for display the item in array.
-2. For in for object and array.
+2. For in for object and for of for array.
 3. For of for array. 
 4. For example
 ```
@@ -426,6 +435,15 @@ let colors = ['red','green','yellow'];
 for(let colors of colors)
     console.log(colors);
 ``` 
+5. Another example
+```
+let numbers = [1,2,3,null,false, true];
+console.log(countTruthy(numbers));
+let value;
+for(value in numbers) {
+    console.log(numbers)
+}
+```
 ## Break and continue
 1. Break is for break the loop.
 2. continue for to iterate the loop. 
