@@ -32,7 +32,7 @@ for(let i = start; i <= end ; i++) {
     ]
     
     let currentGrade = '';
-    let currentMark = 70;
+    let currentMark = 70;// summa mark
     let currentName = '';
     for (i in student) {
         currentMark = student[i].mark;
