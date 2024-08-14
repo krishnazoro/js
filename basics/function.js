@@ -18,9 +18,9 @@ let name = 'ravi'
       greet('krish');
         greet('kumar');
 
-// function to find the square of a number
+function to find the square of a number
 function square(number){ // declaration of function with 1 input parameter
     return number*number; // output parameter
 }
-console.log(square(4));
+console.log(square(2));
  
