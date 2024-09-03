@@ -6,8 +6,8 @@ let book = [{
 
 },
 {
-    title:'sexbook',
-    author:'mathrubootham',
+    title:'Life of pie',
+    author:'kumar',
     publishedYear:1995,
     language:'Tamil'
 
@@ -27,6 +27,6 @@ let book = [{
 
 }];
 
-console.log(        book[0].author        );
+console.log(        book[1].author        );
 console.log(book.length);
 

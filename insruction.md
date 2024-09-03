@@ -7,3 +7,5 @@ Go Back one folder: `cd ..`
 switch():   enter a space before opening a '{' bracket.
 
 To run a program: ` node folderName `.
+
+ To link a js file at html  <!-- <script src="object.js" defer></script>  -->
