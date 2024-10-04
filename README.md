@@ -294,8 +294,9 @@ pass
 2. There are 3 types of logical operator 
 - && - And operator
 - || - Or operator
-- 
-i. && operator
+- | - not operator
+
+### && operator
 1. If the both are true then the output is true
 for example
 ```
@@ -303,7 +304,8 @@ console.log(true && true);
 output 
 true
 ```
-ii. || operator
+### || operator
+
 1. If the one operand is true the output is true.
 for eg
 ```
@@ -311,7 +313,8 @@ console.log(true || false);
 output 
 true
 ```
-iii. ! not operator
+### ! not operator
+
 1. It changes the actual output oppositely.
 for example
 ```
@@ -525,3 +528,4 @@ for(value in numbers) {
 ## Factory function
 
 1. Factory function defines it create the object and it return the object when the user called.
+

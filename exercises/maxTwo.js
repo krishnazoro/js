@@ -1,4 +1,4 @@
-let number = max(2, 4);
+let number = (2, 4);
 console.log(number);
 
 function max(a, b){

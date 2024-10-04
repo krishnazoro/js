@@ -1,36 +1,38 @@
  let a=10;
  a+=5;
- console.log(a);
+ console.log(a); //Additional
 
 
 let a=10;
   a-=5;
-  console.log(a);
+  console.log(a); // Subtraction 
 
- let a=10;
-  a-=5;
-  console.log(a);
 
- let a=10;
-  a/=5;
-  console.log(a);
+let a=10;
+a/=5;
+console.log(a); // Division 
+
 
  let a=10;
   a*=5;
-  console.log(a);
+  console.log(a); // Multiplication
+
 
  let a=10;
   a%=5;
-  console.log(a);
+  console.log(a); // Percentage (reminder)
+
 
   let a=10;
   a^=5;
-  console.log(a);
+  console.log(a); // Xor (Add the two numbers)
+
 
  let a=10;
   a|=5;
- console.log(a);
+ console.log(a); // or (Add the two numbers)
 
+ 
 let a=10;
  a**=5;
- console.log(a);
+ console.log(a); // power (10**5)

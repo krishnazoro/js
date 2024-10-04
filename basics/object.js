@@ -5,7 +5,8 @@ let person ={
     department:'Ece'
 }
 
+
 let fire = 'kumar';
 console.log(fire);
 console.log(person.age);
-// console.log(person, fire);
+console.log(person, fire);
