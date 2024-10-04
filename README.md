@@ -525,7 +525,56 @@ for(value in numbers) {
 
 # Objects
 
+## Basics 
+
+1. In objects key value can be any thing numbers, aplhabets, function, array anything.
+
+```
+let circle = {
+    radius: 1,
+    location: {
+        x: 1,
+        y: 2
+    },
+    isvisble:true,
+    draw: function(){
+        console.log('draw');
+
+    }
+    };
+    circle.draw(); // Method
+
+```
+2. This called an object oriented programming (oops), oops is defined as in object the function is part of the program is called as oops.  
+
 ## Factory function
 
 1. Factory function defines it create the object and it return the object when the user called.
 
+2. It is a way to create a multiple objects with similar properities and methods without any duplicates.
+
+```
+
+function createcircle(radius) {
+    return {
+    radius,
+    draw() {
+        console.log('draw');
+
+    }
+}
+}
+
+const circle1 = createcircle(1);
+console.log(circle1);
+
+const circle2 = createcircle(2);
+console.log(circle2);
+
+```
+
+## Constructor function
+
+1. In constructor function use PascalNotation (every first letter is capital in the pascal notation).
+
+2. It is same as factry function it creates and 

@@ -10,4 +10,4 @@ let circle = {
 
     }
     };
-    circle.draw();
+    circle.draw(); // Method
