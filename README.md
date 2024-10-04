@@ -577,4 +577,4 @@ console.log(circle2);
 
 1. In constructor function use PascalNotation (every first letter is capital in the pascal notation).
 
-2. It is same as factry function it creates and 
+2. It is same as factry function it creates and it doesn't has return keyword but it will return when it call.  
