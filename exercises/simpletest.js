@@ -32,7 +32,7 @@
 //     if(scoredMark % 2 === 0){
 //         console.log("Grade b and the mark is even number");
 //     }
-
+ 
 //     else if (scoredMark % 2 !== 0 ) {
 
 //         console.log("Grade B and the mark is odd number");
@@ -80,7 +80,7 @@
 //     console.log("Error");
 //     break;
 
-//     case(scoredMark < 0):
+//     case(scoredMark < 0 || scoredMark > 100):
 //     console.log("Error");
 //     break;
 

@@ -578,3 +578,66 @@ console.log(circle2);
 1. In constructor function use PascalNotation (every first letter is capital in the pascal notation).
 
 2. It is same as factry function it creates and it doesn't has return keyword but it will return when it call.  
+
+```
+
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw');
+    }
+} 
+const vattam = new Circle(1);
+console.log(vattam);
+
+```
+
+## Nature of the object
+
+1. Java script is a dynamic so we can add a new properities, methods or remove existing ones.
+
+2. We cannot reassign the variable once we assigned.
+
+```
+
+let Circle = {
+    type = shape;
+    color = yellow;
+        
+}
+ let circle ={}
+ 
+const vattam = new Circle(1);
+console.log(vattam);
+
+```
+3. In this program it will be appear error because it reassign the program.
+
+## Constructor property
+
+1. Every object in the js property called constructor.
+
+## Value types vs reference types
+
+1. The Value types are also called as primitive types the value types are 
+
+- Number
+
+- String 
+
+- Boolean 
+
+- Symbol
+
+- Undefined
+
+- Null
+
+2. The reference types are
+
+- Function
+
+- Array
+
+- Object
+
