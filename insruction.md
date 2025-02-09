@@ -9,3 +9,5 @@ switch():   enter a space before opening a '{' bracket.
 To run a program: ` node folderName `.
 
  To link a js file at html  <!-- <script src="object.js" </script>  -->
+
+ when you give a name for file dont give a space.

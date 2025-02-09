@@ -8,7 +8,7 @@ for(let i = start; i <= end ; i++) {
 }
 
  let student = [
-    {name: 'Krishna',
+    // {name: 'Krishna',
         mark: 80},
     {name:'Ravi',
          mark: 85},

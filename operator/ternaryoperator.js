@@ -1,3 +1,3 @@
 let score = 100;
-let type = score > 100 ? 'pass' : 'fail';
+let type = score > 50 ? 'pass' : 'fail';
 console.log(type);

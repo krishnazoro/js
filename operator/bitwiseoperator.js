@@ -6,4 +6,4 @@ console.log(3 ^ 2); // Xor operation
 
 console.log(3 & 2); // And operation
 
-//Not operator
+console.log( ~ 2)//Not operator
