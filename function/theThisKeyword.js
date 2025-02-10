@@ -7,5 +7,12 @@ const video = {
     channel() {
         console.log(this.languages);
     },
+    show() {
+        this.languages.forEach(function(title, language) {
+            console.log(this.title, language);
+        }, this);
+    }
  };
- video.channel();
+ video.show();
+  
+ ``
