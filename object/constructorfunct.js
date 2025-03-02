@@ -3,7 +3,7 @@ function Circle(radius) {
     this.radius = radius;
 
 // method
-    this.draw = function() {
+    this.draw = function() { // or draw(){console.log('draw');}
         console.log('draw');
     };
 }

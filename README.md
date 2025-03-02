@@ -1272,7 +1272,7 @@ console.log(interest(10000, 2.5, undefined));
 
 1. In javascript, getter and setter are special methods that allows you to control acess to the properities of an object.
 
-2. Theyhelp encapsulation the internal state and enable better control over how properities are accessed and modifies
+2. They help encapsulation the internal state and enable better control over how properities are accessed and modifies
 
 3. Getter is access properties and setter is a change (mutate) a object
 
@@ -1376,10 +1376,12 @@ console.log(globalVar); // This will also print "I am global" because globalVar 
 
 1. Scope:
 - var: Function-scoped. A var variable is available throughout the entire function in which it is declared.
+
 - let: Block-scoped. A let variable is only available within the block (i.e., { }) in which it is declared.
 
 2. Hoisting:
 - var: Variables declared with var are hoisted to the top of their containing function or global scope. This means you can use the variable before it is declared, but it will be undefined.
+
 - let: Variables declared with let are hoisted to the top of their block, but they are not initialized until the declaration is encountered. This means you cannot use the variable before it is declared.
 
 3. For example
@@ -1431,9 +1433,495 @@ const video = {
 
  ```
 
+# Object oriented programming 
 
+## Class
 
+1. A class is used in a constructor function to create a blueprint for objects. 
+
+2. It defines the structure and behavior of objects, making it easier to create multiple objects with the same properties and methods.
+
+3. Short definition: class is a template of properities and methods 
+
+4. For example
+
+```
+
+class Car {
+    constructor(name, years ){
+        this.name = name;
+        this.years = years;
+    }
+
+    budget(){
+
+        console.log('The bubget of',this.years);
+        console.log('The name of',this.name);
+    }
+
+}
+
+    let firstCar = new Car('hyundai', 2020);
+    let secondCar = new Car('mahendra', 2024);
+
+    firstCar.budget();
+    secondCar.budget();
+    
+```
+
+4. In example first car and second car are object we can create a seperate variable so it is called as instance variable
+
+## Static variable
+
+1. It’s like a shared property for the entire class.
+
+2. You access it using the class name, not through an object.
+
+3. Its value is the same for all objects of the class.
+
+4. For example
+
+```
+
+class Car {
+    static numbersofcars = 0;
+    constructor(name, years ){
+        // static variable
+        this.name = name;
+        this.years = years;
+        Car.numbersofcars++;
+    }
+
+    budget(){
+        console.log('The bubget of',this.years);
+        console.log('The name of',this.name);
+    }
+
+}
+
+    let firstCar = new Car('hyundai', 2020);
+    let secondCar = new Car('mahendra', 2024);
+    let thirdCar = new Car('KIA', 2021);
+
+    console.log(Car.numbersofcars)
+
+    firstCar.budget();
+    secondCar.budget();
+    
+```
+
+## Static variable
+
+1. Static - common variable / method for class
+          - accessed with class name
+
+2. In JavaScript, a static method is a method that belongs to the class itself, rather than to instances (objects) of the class. This means:
+
+- You can call a static method directly using the class name, without creating an object of the class.
+
+- It cannot access instance-specific data (like properties of an object) because it operates independently of any instance.
+
+- It is often used for utility functions or operations that don't depend on the state of an object.
+
+3. For example
+
+```
+class MathUtils {
  
+  // Static method
+  static add(x, y) {
+    return x + y;
+  }
+}
+
+// Call the static method without creating an object
+
+const result = MathUtils.add(5, 3);
+console.log(result);
+
+```
+4. In this example, add is a static method that performs addition and is called directly on the class MathUtils, not on an instance of the class.
+
+## Inheritance
+
+1. The child class can access and use the properties and methods of the parent class.
+
+2. JavaScript uses the extends keyword to implement inheritance.
+
+3. The super() method is used to call the parent class's constructor and access its methods.
+
+## prototype 
+
+1. When you create a function in JavaScript, a prototype property is automatically created and attached to the function. 
+
+2. This prototype property is an object that contains methods and properties that can be shared among all instances of objects created by that function.
+
+3. Every JavaScript object has a prototype, and this prototype object can also have its own prototype, forming a prototype chain.
+
+4. You can see the prototype in the console.
+
+## Overlapping in inheritance
+
+1. In inheritance if we use one function in parent we can use the same the function in child is called overlapping.
+
+2. Example
+
+```
+// Parent class
+
+class Car {
+    static numbersofcars = 0;
+    constructor(name){
+        // static variable
+        this.name = name;
+        Car.numbersofcars++;
+    }
+
+    budget(){
+        console.log('The name is',this.name)
+        console.log('Good car ')
+    }
+
+}
+
+
+// Child class
+
+class Price extends Car{
+    constructor (name, color) {
+        super(name);
+        this.color = color;
+
+    }
+
+        company() {
+            console.log(this.name + ' less price in the market');
+            console.log(this.color + ' is available');
+
+        }
+
+        budget(){
+            console.log('The name is',this.name)
+            console.log('Super car ')
+        }
+
+       
+
+        
+    }
+
+
+
+
+let firstCar = new Price('hyundai', 'red');
+
+
+console.log(Car.numbersofcars)
+
+firstCar.budget();
+firstCar.company();
+
+```
+
+## Method chaining
+
+1. Method chaining in JavaScript is a way to call multiple methods on the same object, one after another, in a single line of code.
+
+2.  This works because each method returns the object itself (this), allowing the next method to be called on the same object.
+
+3. Example
+
+```
+// Parent class
+
+class Car {
+    static numbersofcars = 0;
+    constructor(name){
+        // static variable
+        this.name = name;
+        Car.numbersofcars++;
+    }
+
+    budget(){
+        console.log('The name of',this.name);
+    }
+
+}
+
+
+// Child class
+
+class Price extends Car{
+    constructor (name, color) {
+        super(name);
+        this.color = color;
+
+    }
+
+        company() {
+            console.log(this.name + ' less price in the market');
+            console.log(this.color + ' is available');
+            return this;
+
+        }
+
+    }
+
+
+
+let firstCar = new Price('hyundai', 'red');
+
+
+console.log(Car.numbersofcars)
+
+firstCar.budget().company();
+
+```
+# Concurrent programming
+
+## Asynchoronus
+
+### Synchoronus
+
+1. First of all know about synchoronous, Synchoronous is generally known as blocking because of if there is a multiple lines of coding it first finish the first line of the code after the completion of first line of code.
+
+2. It goes to the second line of the code and after the completion of second line it goes to the third line.
+
+3. In basic form of js it will be in synchoronous
+
+4. For example
+
+```
+// For synchoronus 
+
+console.log('step 1');
+console.log('step 2');
+console.log('step 3');
+
+```
+
+### Asynchoronus 
+
+1. we can convert the synchoronus into the asynchoronus by using the setTimeout function or setInterval.
+
+```
+// For asynchoronus
+
+console.log("Start");// f1
+
+function sync() { // f2 but not executed
+    console.log('step 1');// f3
+    console.log('step 2');// f4
+    console.log('step 3');// f5
+}
+sync();// f2 is executed and completed
+
+let a = 10;
+let b = 20;
+let c = a + b;
+
+setTimeout(() => console.log('step 1'),3000); // f6
+setTimeout(() => console.log('step 2'),2000); // f7
+setTimeout(() => console.log('step 3'),1000); // f8
+
+console.log("End");// f9
+
+// If you don't understand the program, console.log("Start");// f1
+
+function sync() { // f2 but not executed
+    console.log('step 1');// f3
+    console.log('step 2');// f4
+    console.log('step 3');// f5
+}
+sync();// f2 is executed and completed
+
+let a = 10;
+let b = 20;
+let c = a + b;
+
+setTimeout(() => console.log('step 1'),3000); // f6
+setTimeout(() => console.log('step 2'),2000); // f7
+setTimeout(() => console.log('step 3'),1000); // f8
+
+console.log("End");// f9
+
+//  If you don't undestand the program in the future watch the logic first tamil youtube channel.
+// They say about how the async program works.
+
+```
+
+## Promise
+
+1. In simple terms, a promise in JavaScript is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+2. Think of it as a placeholder for a value that will be available at some point in the future. A promise can be in one of three states:
+
+- Pending: The initial state, neither fulfilled nor rejected.
+
+- Fulfilled: The operation completed successfully, and the promise has a value.
+
+- Rejected: The operation failed, and the promise has a reason for the failure.
+
+3. There are four types of promises
+
+- Promise.all - if there is a three promise program set it needs every program should true if all the program is true it shows the result true but if any one program is false it just show only the false result program
+
+- Promise.allsettled - if there is a three promise program setit shows the result of the three codings in the result.
+
+- Promise.any - if there is a three promise program set it
+needs any one of the program is true it shows only one program if it is true
+
+- promise.race - if there is a three promise program set it needs one of the program event it is true or false and it shows the result which program settle first even it is true or false.
+ 
+ ## Async and await
+
+ 1. async: This keyword is used to declare an asynchronous function. It allows you to write functions that return promises and use the await keyword inside them.
+
+2. await: This keyword is used to pause the execution of an async function until a promise is resolved or rejected. It makes the code look and behave like synchronous code, even though it’s still asynchronous.
+
+## Basics of json
+
+1. JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy for humans to read and write, and for machines to parse and generate. 
+
+2. It is commonly used for transmitting data between a server and a web application.
+
+3. JSON structures data using key-value pairs and arrays.
+
+4. Example
+
+```
+let json1 = 1;
+let json2 = "Krish";
+// let json3 = true;
+let json4 = [1, 2, 3, 4, 5];
+let json6 = `[
+    {
+        "name":"Krishna",     
+        "age": 22
+    },
+    {
+        "name" : "Kumar",
+        "age" :23
+    },
+
+    {
+        "name": "Krish",
+        "age": 20
+    }
+    
+]`;
+let parsed = JSON.parse(json6);
+console.log(parsed);
+console.log(json6);
+
+```
+
+## Fetch Api
+
+1. First of all know about how website works.
+
+- Just imagine you create website using html and css we put the program in the server that process is called hoisting.
+
+- Server is connected with internet it will work 24 hours, Every server has IP address (192.168.0.100).
+
+- We can't remember the IP address so we map the name in IP address (google.com) the name is called as domain.
+
+- When we type the domain name in the browser the domain name connect with IP address .
+
+- The IP address send the request to the server after accepting the request the server returns the result to the browser.
+
+- After processing the result website will open in the browser.
+ 
+- The browser and server is communicate by using HTTP (Hypertext Transfer Protocol) the HTTP has both side browser side and server side.
+
+- When we send the request by using HTTP in browser side and the server send the response to the browser by using HTTP like this way a website works 
+
+2. Now we see about the how api works.
+
+- Just imagine a server and app like react, android and ios it send the request to the server and recieve the request and send response to the app but it not send the HTML and CSS it sends common format it knows, In this we use HTTP as both side server and application side.
+
+- So it is interface between to application is called as API
+
+3. There are some HTTP request method
+
+- GET: Fetch data from server.
+
+- POST: Send new data to the server.
+
+- PUT: Update or replace data on the server.
+
+- PATCH: Update particular thing on the server.
+
+- DELETE: Remove data from the server.
+
+4. Example of HTTP request 
+
+- POST google.com/users?role==admin&active=true HTTP/1.1
+
+- POST -It is a request method.
+
+- google.com/users - It is request path, the server gives data depond method and path.
+
+- ?role==admin&active=true - It is a query parameter(optional) and it is used for to send additional data.
+
+- HTTP/1.1 - 1.1 is a HTTP version and we can send the addition information using headers and we can send in the content type, language and from which website sent.
+
+- And we can create a data in a server by using body(optional) and by using we create a key value pair in the body.
+
+- we can send the additional information by using query parameter and the body, in query parameter we can't send security access like password but so we can use body in that we can send a security access like password.
+
+- And the query parameter and body are optional.
+
+5. HTTP response
+
+- HTTP response example [HTTP/1.1 201 created ]
+
+- HTTP/1.1: It is the version of the HTTP.
+
+- 201: is status code there are various status code they are
+
+i. 200 - 200 related series represent the sucess.
+
+ii. 300 - 300 related series represent the redirect.
+
+iii. 400 - 400 related series represent the mistake of user(our) side request
+
+iv. 500 - 500 related series represent the mistake of server side.
+
+- created: status code related with string formate and they send response they add additional information in the response headers and even they send response body to add a addition information we can take the data and process and render the data in UI . 
+ 
+6. Handling APIS in javascript
+
+- We going to use a fetch function that is used to make HTTP request in javascript.
+
+- Fetch is an asynchoronous function.
+
+- example of handling API [fetch(url,option)].
+
+- fetch: the fetch returns the output promise.
+
+- url: In url which API need to give a request give a API path.
+
+- options: In options needs to give a methods, headers and body.
+
+- Fetch collects the details and run the code it just iniate the code goes to next line because of it is asynchoronous and we can handle the code using .then and catch because the output return the promise.
+
+- After sucessfuly completation of fetch function .then is used and we get object response it shows API success or not,basic type a headers information.
+
+- If we need to get a data by use response.json() but it will return the output another promise if we use .then again it makes so complex, so we return the promise as output for fetch function. after completation the function we use another .then function.
+
+```
+.then(function(response) {
+    return response.json()
+})
+.then(function(data){
+    // handle data
+})
+
+
+
+
+
 
 
 
