@@ -27,6 +27,6 @@ let book = [{
 
 }];
 
-console.log(        book[0].author        );
+console.log(        book[2].author        );
 console.log(book.length);
 

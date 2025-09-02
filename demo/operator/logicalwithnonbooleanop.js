@@ -1,5 +1,3 @@
-//  console.log(true || true);
- 
 //  console.log(true || 'mosh');
 
 // console.log(false || 'mosh');
@@ -12,3 +10,5 @@
 // console.log(false || 1 || 2 );
  
 // console.log(true || 1 || 2 );
+
+// console.log('mosh' || 1 || 2 );

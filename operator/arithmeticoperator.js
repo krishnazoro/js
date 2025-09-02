@@ -19,7 +19,7 @@
 
 
 //   let x = 10;
-//    let y = 5;
+//    let y = 4;
 //    console.log(x % y);//percentage
 
 

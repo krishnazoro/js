@@ -1,13 +1,12 @@
-let time = 22;
-if (time > 6 && time < 12){
-    console.log("Good Morning");
+let hour =19;
+if(hour >=6 && hour <= 12){
+    console.log('good morning');
 }
-else if (time > 12 && time < 16){
-    console.log("Good Afternoon");
-}
-else if (time > 16 && time < 21){
-    console.log("Good Evening");
-}
+else if(hour >=12 && hour <= 18) {
+    console.log("good afternoon");
+} 
+
 else{
-    console.log("Good Night")
+console.log("good night");
 }
+

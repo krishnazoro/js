@@ -1,5 +1,5 @@
 
-let scoredmarks = 25;
+let scoredmarks = 80;
 switch (true) {
 
     case(scoredmarks >= 80 && scoredmarks <= 90):

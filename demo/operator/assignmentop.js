@@ -1,0 +1,32 @@
+// let a = 10;
+// a+=5;
+// console.log(a); //Additional
+
+// let a = 10;
+// a-=5;
+// console.log(a); //subtraction
+
+// let a = 10;
+// a*=5;
+// console.log(a); //Multiplication
+
+// let a = 10;
+// a/=5;
+// console.log(a); //Division
+
+// let a = 10;
+// a%=5;
+// console.log(a); //reminder
+
+// let a = 10;
+// a**=5;
+// console.log(a); //power
+
+// let a = 10;
+// a^=5;
+// console.log(a); //xor (Add the two numbers)
+
+let a = 10;
+a|=5;
+console.log(a); //Or (Add the two numbers)
+

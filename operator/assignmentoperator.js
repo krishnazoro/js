@@ -19,17 +19,17 @@
 
 
 //  let a=10;
-  // a%=5;
-  // console.log(a); //  reminder
+//   a%=5;
+//   console.log(a); //  reminder
 
  
-  // let a=10;
-  // a^=5;
-  // console.log(a); // Xor (Add the two numbers)
+// let a=10;
+// a^=5;
+// console.log(a); // Xor (Add the two numbers)
 
 
 //  let a=10;
-  // a|=5;
+//   a|=5;
 //  console.log(a); // or (Add the two numbers)
 
  

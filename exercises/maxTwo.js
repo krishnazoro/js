@@ -1,11 +1,11 @@
-let number = (2, 4);
+let number = (5, 4);
 console.log(number);
 
 function max(a, b){
-    if(a > b) 
+    if(a < b) 
         return a;
     else 
-    return b;
+        return b;
       
     }
   

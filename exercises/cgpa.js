@@ -9,7 +9,7 @@ const marks = [80, 90, 55, 87 , 86, 78];
 // 90-100: A
 
 let len = marks.length;
-
+console.log(len);
 
 let sum = 0;
 
@@ -18,7 +18,6 @@ for(let i = 0; i < len; i++)  {
 }
 
 let avg = sum / len;
-
 
 grade= ''
 

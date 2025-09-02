@@ -1,14 +1,15 @@
-let role = 'guest';
+let role ='guest';
 
 switch(role) {
+    
     case 'guest':
-        console.log("Guest User");
-        break;
+    console.log('guest');
+    break;
 
-    case 'Moderator':
-        console.log("Moderate User");
-        break;
-        
-    default:
-        console.log("Unknown User");
+    case 'friend':
+     console.log('friend ');
+     break;
+
+     default:
+     console,log('unknown');
 }

@@ -122,13 +122,15 @@ console.log('program');
 
 4. For programming Var keyword had be declared but it has some issues we are Es6 orgaization use let keyword.
 
-5. Structure be like 'let firstName'.
+5. let keyword is a variable because it is flexible we can change the value when we want. 
+
+6. Structure be like 'let firstName'.
 
 let - variable type
 
 name - variable name
 
-6.We can declare a string in single or duble quotes.
+7. We can declare a string in single or duble quotes.
 
 ## Rules
 
@@ -211,9 +213,10 @@ name - variable name
 ## Array
 
 1. Array has multiple variable,numbers,strings and it covered by square bracket seperated by comma.
-   Eg: `let selectcolor = ['red','blue,'green'];`
+Eg: `let selectcolor = ['red','blue,'green'];`
+
 2. In js array can mixed with string and numbers.
-   Eg: `let selectcolor = ['red','blue,'green',1];`
+Eg: `let selectcolor = ['red','blue,'green',1];`
 
 ## Function
 
@@ -231,14 +234,18 @@ name();
 
 1. Js is a dyanamic language.
 
-- Static language
-  It cannot be changeable in future.
-- Dynamic language
-  it is changeable in future.
+## Static language
+  
+- It cannot be changeable in future.
+
+## Dynamic language
+
+- It is changeable in future.
 
 ### Conditional
 
 - `<` bigger mouth side is bigger.
+
 - `>` smaller mouth side is smaller.
 
 ---
@@ -248,24 +255,33 @@ name();
 # Javascript operator
 
 1. js has various operartor.
+
 2. operator is used to maths operation.
 
 - Arithmetic operator
+
 - Assingment operator
+
 - Comparsion operator
+
 - Equality operator
+
 - Ternary operator
+
 - Logical operator
+
 - Logical operator with non boolean operator
+
 - Bitwise operator
 
 ## Arithmetic operator
 
-1. In arithmetic operator we can assign and operate values with the help of +, -, \*, /, \*\*, %,++,--.
+1. In arithmetic operator we can assign and operate values with the help of +, -, *, /, **, %,++,--.
 
 ## Assignment operator
 
 1. The assignment operator in programming assigns a value to a variable,linking the variable such as '='.
+
 2. The assignment operator symbols are =, -=, +=, /=, \*=, %=, ^=, |=, \*\*=.
 
 ```
@@ -278,7 +294,6 @@ console.log(a);
 ## Comparision operator
 
 1. It is also known as relative operator it compare the two operand by >, <, >=, <=, ===, !== this operator.
-   eg:
 
 ```
 let a=10;
@@ -289,8 +304,8 @@ console.log(a >= 5);
 ## Equality operator
 
 1. It is loose equality operator.
+
 2. The symbol of equality operator is ==.
-   for example
 
 ```
 let a = 1;
@@ -302,8 +317,8 @@ console.log(1 == '1');
 ## Ternary operator
 
 1.  It is also known as conditional operator.
+
 2.  if the conditional is true the output is true otherwise false.
-    for example
 
 ```
 let score = 110;
@@ -319,14 +334,15 @@ pass
 2. There are 3 types of logical operator
 
 - && - And operator
+
 - || - Or operator
+
 - | - not operator
 
 ### && operator
 
 1. If the both are true then the output is true
-   for example
-
+   
 ```
 console.log(true && true);
 output
@@ -336,7 +352,6 @@ true
 ### || operator
 
 1. If the one operand is true the output is true.
-   for eg
 
 ```
 console.log(true || false);
@@ -347,7 +362,6 @@ true
 ### ! not operator
 
 1. It changes the actual output oppositely.
-   for example
 
 ```
 console.log!(true);
@@ -358,7 +372,6 @@ false
 # Logical operator with non - boolean
 
 1. In boolean True or false is not necessary.
-   for example
 
 ```
 - true || true
@@ -370,8 +383,7 @@ true
 ```
 
 2. A variable or number that contain anything is called
-   Falsy
-   for example
+Falsy.
 
 ```
  false || 1
@@ -379,17 +391,22 @@ true
 ```
 
 3. Falsy is not a boolean
+
 4. Falsy categorize
 
 - undefined
+
 - null
+
 - 0
+
 - false
+
 - ''(empty string)
+
 - Nan(not a number{not a number is special in js when we dealing with mathematically})
 
 5. Anything that is not falsy that is truthy.
-   for example
 
 ```
  true || 1
@@ -397,7 +414,6 @@ true
 ```
 
 6. Short circuiting method
-   for example
 
 ```
  false || 2 || 1
@@ -406,22 +422,25 @@ true
 
 # Bitwise operator
 
-1. Bitwise operator to 32 bit
+1. Bitwise operator to 32 bit.
+
 2. The symbol is &, |, ^, ~.
 
 ---
 
 # Control flow
 
-1. In this operator and expression along with condtional statement
+1. In this operator and expression along with condtional statement.
+
 2. conditional operator are two types.
 
 - If else
 - Switch case
 
-i. If else
+## If else
 
 1.  We assign the multiple statement in the condition.
+
 2.  syntax:
     if(condition){
     statement
@@ -435,7 +454,7 @@ i. If else
     else
     statement
 
-ii.switch case
+## switch case
 
 1. We assign the multiple case in the condition.
 2. Syntax
@@ -458,13 +477,19 @@ statement;
 # Loop
 
 1. The loop is used for repeat a action number of times.
+
 2. There are various kinds of loop.
 
 - For loop
+
 - While loop
+
 - Do...while loop
+
 - For... in loop
+
 - For... of
+
 - Infinite loop
 
 3. They all do the same action but it has different way of method.
@@ -480,25 +505,28 @@ console.log('Hello world');
 ```
 
 1. let i = 0 it is a initial expression and it can be declare before a loop condition.
+
 2. i < 5 it is a condition.
+
 3. i++ it is a increamental expression.
+
 4. For loop for increamenrt example
 
 ```
- for(let i = 0; i < 10; i++ ){
+for(let i = 0; i < 10; i++ ){
  if(i % 2 !==0)
      console.log(i);
-
- }
+}
 ```
 
 ### Procedure:
 
 - First step :At for loop i= 0 and it compare 0 < 10 if it is true it run the program or exit the program.
+
 - Second step :if loop 0 %(modulo) 2 it check the reminder if the reminder is 0 .
+
 - Third step : it goes to !==0 ,0 !==0 false.it comes to end
-  and directly goes to at for loop to increament expression(i++)
-  and the 0 is increamented as 1 and repeat the procedure again.
+and directly goes to at for loop to increament expression(i++) and the 0 is increamented as 1 and repeat the procedure again.
 
 ## While loop
 
